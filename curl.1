@@ -1,0 +1,6 @@
+require ‘ httparty ’
+require ' nokogiri ’
+
+response = HTTParty.get(ARGV[1].to_s)
+p response.headers
+p response.body
